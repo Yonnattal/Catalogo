@@ -12,7 +12,7 @@
     {
       "src": "/(.*)",
       "dest": "/indexC.php"
-    }
+    },
      {
       "src": "/(.*)",
       "dest": "/indexM.php"
