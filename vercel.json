@@ -2,9 +2,19 @@
   "functions": {
     "api/**/*.php": {
       "runtime": "vercel-php@0.7.0"
+    },
+    "*.php": {
+      "runtime": "vercel-php@0.7.0"
     }
   },
   "routes": [
-    { "src": "/(.*)", "dest": "/indexM.php" }
+    {
+      "src": "/img/(.*)",
+      "dest": "/img/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/indexC.php"
+    }
   ]
 }
