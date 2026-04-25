@@ -6,6 +6,10 @@
   },
   "routes": [
     {
+      "src": "/img/(.*)",
+      "dest": "/img/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/indexC.php"
     }
