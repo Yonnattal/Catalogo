@@ -1,5 +1,13 @@
 {
-  "scripts": {
-    "build": "[my-framework] build --output public"
-  }
+  "functions": {
+    "*.php": {
+      "runtime": "vercel-php@0.7.0"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/indexC.php"
+    }
+  ]
 }
