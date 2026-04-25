@@ -1,5 +1,5 @@
 <?php
-include('../bd/conexion.php');
+include('bd/conexion.php');
 
 // 1. Consulta principal (Asegúrate de que 'precio' y 'Minimo' existan en tu tabla)
 $res = $conn->query("SELECT idproducto, descripcion, precio, disponible, Minimo, foto, Tipo,Venta FROM productos WHERE disponible >= 0 and precio > 0 ORDER BY Tipo ASC, descripcion ASC");
